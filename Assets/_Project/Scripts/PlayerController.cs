@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
     private bool jumpPressed;
     private bool isGrounded;
+    public float FacingDirection { get; private set; } = 1f;
 
     void Awake()
     {
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
         moveInput = 0f;
         if (kb.aKey.isPressed || kb.leftArrowKey.isPressed) moveInput -= 1f;
         if (kb.dKey.isPressed || kb.rightArrowKey.isPressed) moveInput += 1f;
+        if (moveInput != 0f) FacingDirection = Mathf.Sign(moveInput);
 
         if (kb.spaceKey.wasPressedThisFrame || kb.wKey.wasPressedThisFrame || kb.upArrowKey.wasPressedThisFrame)
             jumpPressed = true;
