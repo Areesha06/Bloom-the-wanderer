@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private bool jumpPressed;
     private bool isGrounded;
     public float FacingDirection { get; private set; } = 1f;
+    public bool inputLocked;
 
     void Awake()
     {
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         Keyboard kb = Keyboard.current;
         if (kb == null) return;
+        if (inputLocked) { moveInput = 0f; jumpPressed = false; return; }
 
         moveInput = 0f;
         if (kb.aKey.isPressed || kb.leftArrowKey.isPressed) moveInput -= 1f;

@@ -18,6 +18,7 @@ public class PlayerShooter : MonoBehaviour
     {
         Keyboard kb = Keyboard.current;
         if (kb == null || projectilePrefab == null) return;
+        if (pc.inputLocked) return;
 
         bool firePressed = kb.leftCtrlKey.wasPressedThisFrame
                         || kb.rightCtrlKey.wasPressedThisFrame
