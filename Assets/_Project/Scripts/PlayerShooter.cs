@@ -8,10 +8,12 @@ public class PlayerShooter : MonoBehaviour
 
     private PlayerController pc;
     private float nextFire;
+    private PlayerAnimator anim;
 
     void Awake()
     {
         pc = GetComponent<PlayerController>();
+        anim = GetComponent<PlayerAnimator>();
     }
 
     void Update()
@@ -37,5 +39,6 @@ public class PlayerShooter : MonoBehaviour
         Vector3 spawnPos = transform.position + new Vector3(0.7f * dir, 0f, 0f);
         Projectile p = Instantiate(projectilePrefab, spawnPos, Quaternion.identity);
         p.Launch(new Vector2(dir, 0f));
+        if (anim != null) anim.PlayAttack();
     }
 }

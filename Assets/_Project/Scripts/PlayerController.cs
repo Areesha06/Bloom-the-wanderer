@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     public float FacingDirection { get; private set; } = 1f;
     public bool inputLocked;
+    public bool IsGrounded => isGrounded;
 
     void Awake()
     {
