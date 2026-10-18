@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -103,12 +103,12 @@ TextureImporter:
       name: NES_Castle_Tile_Set_1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 584
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 224
+        y: 108
+        width: 176
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -121,11 +121,451 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 257
+        width: 224
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc2f06c2147f6046ab092cf8ce14233
+      internalID: -526579345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_2
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 17
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 1}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655a77423bdb1e349b800c097d65806e
+      internalID: -1583559001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfc05bb5728e4b408ac58ef65d1552e
+      internalID: 1873866541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 129
+        width: 65
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c092105686a1574f96037d60864acfc
+      internalID: 339159952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 129
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a26dcd586659a94f910f4ef70128f66
+      internalID: -1606278028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_6
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 127
+        width: 79
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a111875150c5ad4d8786b655ba9e4ff
+      internalID: -1602607678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 208
+        width: 112
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf960703752e53446844fb06acfea31c
+      internalID: 1231927228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 130
+        width: 46
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fa8beaa49d6924b8ce02c5ed8d2c68
+      internalID: -609929542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 81
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78bd4ece00184542a6e8950c82f9ffa
+      internalID: -108964006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 49
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8bf6be01abdee4698b0414644f4f10
+      internalID: -8714833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 192
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57ef58b1a29daa4eb98b54ca862abc9
+      internalID: -203851103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_12
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 79
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659cebe1dfa60084a969e76121c634f3
+      internalID: 1984630315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 257
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed76740076d36d46bd5d0d45d7350ee
+      internalID: 1740124656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 194
+        width: 63
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6241c886842b341922c19644f92e78
+      internalID: -1045381248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5792f5f4a62c149a0aaa8b34386774
+      internalID: -235371202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_16
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 192
+        width: 65
+        height: 63
+      alignment: 9
+      pivot: {x: 0.52425724, y: 0.48748538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae25819c6682394b916310a87928535
+      internalID: 1436826171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_17
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 50
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2607f8f7f46ca694da84da3daf5bd0a7
+      internalID: 2137489814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_18
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fb3576c69e71a4c96458a23cc978d1
+      internalID: 1194575909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 80
+        width: 176
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cabff64f67b5a64490a7ec66025a0f5
+      internalID: 1475823772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NES_Castle_Tile_Set_1_20
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 40
+        width: 71
+        height: 9
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15484bd0f412e2f4a8547aa4fb1818a4
+      internalID: 465551391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 80b25b90e55147a4ca7d1d06f63c9e29
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +576,26 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       NES_Castle_Tile_Set_1_0: -9002110567990854896
+      NES_Castle_Tile_Set_1_1: -526579345
+      NES_Castle_Tile_Set_1_10: -8714833
+      NES_Castle_Tile_Set_1_11: -203851103
+      NES_Castle_Tile_Set_1_12: 1984630315
+      NES_Castle_Tile_Set_1_13: 1740124656
+      NES_Castle_Tile_Set_1_14: -1045381248
+      NES_Castle_Tile_Set_1_15: -235371202
+      NES_Castle_Tile_Set_1_16: 1436826171
+      NES_Castle_Tile_Set_1_17: 2137489814
+      NES_Castle_Tile_Set_1_18: 1194575909
+      NES_Castle_Tile_Set_1_19: 1475823772
+      NES_Castle_Tile_Set_1_2: -1583559001
+      NES_Castle_Tile_Set_1_20: 465551391
+      NES_Castle_Tile_Set_1_3: 1873866541
+      NES_Castle_Tile_Set_1_4: 339159952
+      NES_Castle_Tile_Set_1_5: -1606278028
+      NES_Castle_Tile_Set_1_6: -1602607678
+      NES_Castle_Tile_Set_1_7: 1231927228
+      NES_Castle_Tile_Set_1_8: -609929542
+      NES_Castle_Tile_Set_1_9: -108964006
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
