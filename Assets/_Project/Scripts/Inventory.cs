@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
 
     public int redShards;
     public int blueShards;
+    public bool hasEmerald = false;
 
     private List<string> clueTitles = new List<string>();
     private List<string> clueBodies = new List<string>();
@@ -27,6 +28,10 @@ public class Inventory : MonoBehaviour
         StringBuilder sb = new StringBuilder();
         sb.AppendLine("<b>INVENTORY</b>\n");
         sb.AppendLine("Red shards: " + redShards + "    Blue shards: " + blueShards + "\n");
+        if (hasEmerald){
+            sb.AppendLine("Emerald: Collected");}
+        else{
+            sb.AppendLine("Emerald: Not collected");}
         sb.AppendLine("<b>Clues</b>");
         if (clueTitles.Count == 0) sb.AppendLine("(none yet)");
         for (int i = 0; i < clueTitles.Count; i++)
