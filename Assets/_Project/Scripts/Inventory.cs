@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     public int redShards;
     public int blueShards;
     public bool hasEmerald = false;
+    public bool hasStar = false;
 
     private List<string> clueTitles = new List<string>();
     private List<string> clueBodies = new List<string>();
