@@ -39,6 +39,13 @@ public class TelescopeView : MonoBehaviour
 
             if (!found && puzzle.TelescopeUnlocked &&
                 distance <= interactionDistance &&
+                GameUI.Instance != null && !GameUI.Instance.IsAnyPanelOpen)
+            {
+                GameUI.Instance.SetHint("Press E to open the telescope");
+            }
+
+            if (!found && puzzle.TelescopeUnlocked &&
+                distance <= interactionDistance &&
                 Keyboard.current.eKey.wasPressedThisFrame)
             {
                 OpenTelescope();

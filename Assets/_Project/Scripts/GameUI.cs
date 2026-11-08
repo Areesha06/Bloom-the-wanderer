@@ -88,7 +88,19 @@ public class GameUI : MonoBehaviour
 
     void CloseInventory() { inventoryPanel.SetActive(false); MarkChange(); }
 
-    public void SetPrompt(string text) { promptText.text = text; }
+    private string interactPrompt = "";
+    private string hint = "";
+
+    public void SetPrompt(string text) { interactPrompt = text; }
+
+    // Other scripts call this every frame while their hint should be visible
+    public void SetHint(string text) { hint = text; }
+
+    void LateUpdate()
+    {
+        promptText.text = !string.IsNullOrEmpty(interactPrompt) ? interactPrompt : hint;
+        hint = "";
+    }
 
     public void ShowMessage(string msg)
     {
