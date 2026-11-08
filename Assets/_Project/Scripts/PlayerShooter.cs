@@ -23,8 +23,7 @@ public class PlayerShooter : MonoBehaviour
         if (pc.inputLocked) return;
 
         bool firePressed = kb.leftCtrlKey.wasPressedThisFrame
-                        || kb.rightCtrlKey.wasPressedThisFrame
-                        || kb.fKey.wasPressedThisFrame;   // F = backup key
+                        || kb.rightCtrlKey.wasPressedThisFrame;
 
         if (firePressed && Time.time >= nextFire)
         {

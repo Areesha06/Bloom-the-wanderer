@@ -13,7 +13,7 @@ public class TelescopeView : MonoBehaviour
     public RectTransform targetStar;
     public GameObject roomStar;
 
-    public float interactionDistance = 3f;
+    public float interactionDistance = 5f;
     public float moveSpeed = 250f;
     public float selectionDistance = 35f;
 

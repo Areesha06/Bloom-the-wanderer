@@ -1,34 +1,49 @@
-
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class RoomDoor : MonoBehaviour
+public class RoomDoor : Interactable
 {
     public Transform destination;
-    private Transform player;
+    public bool setAsRespawnPoint = true;
+    public bool requiresRedShard = false;
+    public string lockedMessage = "The door is locked.";
+    public string doorPrompt = "Press E to enter";
 
-    void Update()
+    void Awake()
     {
-        if (player != null && Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame)
-        {
-            player.position = destination.position;
-            player = null;
-        }
+        prompt = doorPrompt;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public override void Interact()
     {
-        if (other.CompareTag("Player"))
-        {
-            player = other.transform;
-        }
-    }
+        GameUI ui = GameUI.Instance;
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
+        if (destination == null)
         {
-            player = null;
+            ui.ShowMessage("This door is locked for now.");
+            return;
         }
+
+        if (requiresRedShard && Inventory.Instance.redShards <= 0)
+        {
+            ui.ShowMessage(lockedMessage);
+            return;
+        }
+
+        PlayerController pc = FindFirstObjectByType<PlayerController>();
+        if (pc == null) return;
+
+        pc.transform.position = destination.position;
+
+        Rigidbody2D rb = pc.GetComponent<Rigidbody2D>();
+        if (rb != null) rb.linearVelocity = Vector2.zero;
+
+        if (setAsRespawnPoint)
+        {
+            PlayerHealth ph = pc.GetComponent<PlayerHealth>();
+            if (ph != null) ph.SetRespawnPoint(destination);
+        }
+
+        CameraFollow cam = FindFirstObjectByType<CameraFollow>();
+        if (cam != null) cam.SnapToTarget();
     }
 }
