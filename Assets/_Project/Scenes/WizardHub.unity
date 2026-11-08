@@ -6596,7 +6596,7 @@ MonoBehaviour:
   prompt: Press E to enter code
   correctCode: 463
   codePanel: {fileID: 2000480125}
-  codeText: {fileID: 1360046611}
+  codeText: {fileID: 22979262}
   openedColor: {r: 1, g: 0.85, b: 0.2, a: 1}
 --- !u!61 &1780582949
 BoxCollider2D:
