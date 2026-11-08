@@ -50,6 +50,14 @@ public class Projectile : MonoBehaviour
             {
                 enemy.TakeDamage(damage);
                 Destroy(gameObject);
+                return;
+            }
+
+            Cobweb web = other.GetComponent<Cobweb>();
+            if (web != null)
+            {
+                web.TakeDamage(damage);
+                Destroy(gameObject);
             }
         }
     }
