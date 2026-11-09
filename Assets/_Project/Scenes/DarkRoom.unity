@@ -1840,6 +1840,7 @@ MonoBehaviour:
   redShards: 0
   blueShards: 0
   hasEmerald: 0
+  hasStar: 0
 --- !u!224 &1417107960
 RectTransform:
   m_ObjectHideFlags: 0
