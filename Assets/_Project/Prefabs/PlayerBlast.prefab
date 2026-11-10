@@ -185,4 +185,4 @@ MonoBehaviour:
   lifetime: 3
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
