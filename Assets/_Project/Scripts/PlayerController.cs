@@ -59,4 +59,11 @@ public class PlayerController : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+
+    public bool hasHeartShard = false;
+    public void EquipHeartShard()
+    {
+        hasHeartShard = true;
+        Debug.Log("Heart Shard equipped!");
+    }
 }
