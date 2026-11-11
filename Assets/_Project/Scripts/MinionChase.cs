@@ -19,9 +19,7 @@ public class MinionChase : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
-
         platformCollider = platform.GetComponent<Collider2D>();
-        
     }
 
     void FixedUpdate()

@@ -11,7 +11,6 @@ public class BossArenaManager : MonoBehaviour
         if (fightStarted == false && other.CompareTag("Player"))
         {
             fightStarted = true;
-
             //start fight
             if (boss != null)
             {

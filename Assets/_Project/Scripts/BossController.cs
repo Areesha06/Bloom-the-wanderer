@@ -52,14 +52,12 @@ public class BossController : MonoBehaviour
         }
     }
 
-    // Resolves the CS1061 compile error from BossTrigger.cs
     public void StartBossBattle()
     {
     }
 
     void Update()
     {
-        // 1. Minion tracking for shield
         GameObject minionLeft = GameObject.Find("SkullGoon(Clone)");
         if (minionLeft == null) minionLeft = GameObject.Find("SkullGoon");
         if (minionLeft == null) minionLeft = GameObject.FindWithTag("Enemy");
@@ -70,12 +68,10 @@ public class BossController : MonoBehaviour
         }
 
        
-// --- CHANGED: Detect the first frame player lands, shoot instantly, then repeat on timer ---
         bool isPlayerOnPlatform = IsPlayerOnMyPlatform();
 
         if (isPlayerOnPlatform)
         {
-            // Just landed this frame -> shoot immediately!
             if (!wasPlayerOnPlatform)
             {
                 attackTimer = 0f;
@@ -97,25 +93,21 @@ public class BossController : MonoBehaviour
         }
 
         wasPlayerOnPlatform = isPlayerOnPlatform;
-        // (Removed the "else { attackTimer = 0f; }" so small jumps don't cancel the timer)
     }
 
     void FixedUpdate()
     {
         if (player == null || platformCollider == null || rb == null) return;
-
-        // Move and face player only when player is on this platform
         if (!IsPlayerOnMyPlatform()) return;
 
         float playerOffsetX = player.position.x - rb.position.x;
 
-        // Flip sprite towards the player
+        //flip king's direction
         if (spriteRenderer != null)
         {
             spriteRenderer.flipX = (playerOffsetX < 0f);
         }
 
-        // Keep boss clamped to platform edges
         Bounds bounds = platformCollider.bounds;
         float halfWidth = bossCollider != null ? bossCollider.bounds.extents.x : 0.5f;
         float minX = bounds.min.x + halfWidth;
@@ -136,12 +128,9 @@ public class BossController : MonoBehaviour
     {
         if (player == null || platformCollider == null) return false;
 
+        //player on platform check
         Bounds bounds = platformCollider.bounds;
-
-        // Check if player's X position is between platform edges
         bool withinX = player.position.x >= bounds.min.x && player.position.x <= bounds.max.x;
-
-        // Check if player's feet are on the platform surface
         bool onTopY = player.position.y >= (bounds.max.y - 0.5f) && player.position.y <= (bounds.max.y + 2.5f);
 
         return withinX && onTopY;
@@ -177,7 +166,6 @@ public class BossController : MonoBehaviour
         }
 
         health -= 25;
-
         if (health <= 0)
         {
             if (arenaManager != null)

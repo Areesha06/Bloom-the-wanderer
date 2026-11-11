@@ -18,7 +18,7 @@ public class LightPulse : MonoBehaviour
     {
         if (light2D != null)
         {
-            //intensity change between min and max
+            //intensity, min -> max
             float wave = (Mathf.Sin(Time.time * pulseSpeed) + 1f) / 2f;
             light2D.intensity = Mathf.Lerp(minIntensity, maxIntensity, wave);
         }
