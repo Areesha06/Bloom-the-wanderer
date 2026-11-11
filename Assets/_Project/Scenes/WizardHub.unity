@@ -394,6 +394,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22979260}
   m_CullTransparentMesh: 1
+--- !u!1 &31639674
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 31639675}
+  m_Layer: 0
+  m_Name: ReturnPoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &31639675
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31639674}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -68.91, y: -4.18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &59962246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1352,7 +1383,7 @@ PrefabInstance:
     - target: {fileID: -5235490873596138919, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
       propertyPath: destination
       value: 
-      objectReference: {fileID: 1095359215}
+      objectReference: {fileID: 1270637022}
     - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 55.17
@@ -2213,6 +2244,37 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &412976767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 412976768}
+  m_Layer: 0
+  m_Name: ReturnPoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &412976768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412976767}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -52.5, y: -3.78, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425167942
 GameObject:
   m_ObjectHideFlags: 0
@@ -5145,7 +5207,7 @@ BoxCollider2D:
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 160, y: 1.3}
+  m_Size: {x: 170, y: 1.3}
   m_EdgeRadius: 0
 --- !u!212 &999128106
 SpriteRenderer:
@@ -6236,6 +6298,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258512869}
   m_CullTransparentMesh: 1
+--- !u!1 &1270637021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270637022}
+  m_Layer: 0
+  m_Name: ReturnPoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270637022
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270637021}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -60.57, y: -3.74, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1296658151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6817,6 +6910,96 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1393624536
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1525426742}
+    m_Modifications:
+    - target: {fileID: -5235490873596138919, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: doorPrompt
+      value: Press E to leave
+      objectReference: {fileID: 0}
+    - target: {fileID: -5235490873596138919, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: destination
+      value: 
+      objectReference: {fileID: 412976768}
+    - target: {fileID: -5235490873596138919, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: lockedMessage
+      value: Find the red shard first.
+      objectReference: {fileID: 0}
+    - target: {fileID: -5235490873596138919, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: requiresRedShard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510865808123779775, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510865808123779775, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7510865808123779775, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965543716551555112, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+      propertyPath: m_Name
+      value: LibraryExit (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+--- !u!4 &1393624537 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
+  m_PrefabInstance: {fileID: 1393624536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1419870818
 GameObject:
   m_ObjectHideFlags: 0
@@ -7484,6 +7667,7 @@ Transform:
   m_Children:
   - {fileID: 551657987}
   - {fileID: 2006858828}
+  - {fileID: 1393624537}
   - {fileID: 887133628}
   - {fileID: 1963900372}
   - {fileID: 2119128693}
@@ -8554,7 +8738,7 @@ PrefabInstance:
     - target: {fileID: -5235490873596138919, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
       propertyPath: destination
       value: 
-      objectReference: {fileID: 1095359215}
+      objectReference: {fileID: 31639675}
     - target: {fileID: 3004740065472516259, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.07
@@ -10385,7 +10569,7 @@ PrefabInstance:
     - target: {fileID: -5235490873596138919, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
       propertyPath: destination
       value: 
-      objectReference: {fileID: 1095359215}
+      objectReference: {fileID: 412976768}
     - target: {fileID: -5235490873596138919, guid: ba83de2a185472149a3d06a20a48001c, type: 3}
       propertyPath: lockedMessage
       value: Find the red shard first.
@@ -11127,6 +11311,9 @@ SceneRoots:
   - {fileID: 442341679}
   - {fileID: 622932509}
   - {fileID: 1095359215}
+  - {fileID: 31639675}
+  - {fileID: 1270637022}
+  - {fileID: 412976768}
   - {fileID: 795686717}
   - {fileID: 1708841437}
   - {fileID: 1953309745}
