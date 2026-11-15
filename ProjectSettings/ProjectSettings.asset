@@ -584,7 +584,8 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: UNITY_ANALYTICS_EVENT_LOGS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -683,11 +684,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 910da550-3959-4d70-b7de-5a13aab95fea
+  cloudProjectId: 59391257-ab71-4590-a930-cf9117708d03
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Bloom the wanderer 2026-10-14_00-16-48
-  organizationId: areeshakashif287
+  projectName: Bloom the wanderer
+  organizationId: ar09232mt85nxwh
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

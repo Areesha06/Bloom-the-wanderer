@@ -3,7 +3,7 @@ using UnityEngine;
 public class BossController : MonoBehaviour
 {
     [Header("Stats & Settings")]
-    public int health = 100;
+    public int health = 120;
     public GameObject shield;
     public GameObject platform; 
     public BossArenaManager arenaManager;
