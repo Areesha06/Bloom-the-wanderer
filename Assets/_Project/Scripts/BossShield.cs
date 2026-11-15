@@ -6,7 +6,6 @@ public class BossShield : MonoBehaviour
     {
         bool minionAlive = false;
 
-        // Loop through objects to find any name containing "skullgoon"
         foreach (GameObject obj in Object.FindObjectsByType<GameObject>(FindObjectsSortMode.None))
         {
             if (obj.name.ToLower().Contains("skullgoon"))
@@ -16,7 +15,7 @@ public class BossShield : MonoBehaviour
             }
         }
 
-        // Once none are found, remove the shield
+        //shield remove
         if (!minionAlive)
         {
             Destroy(gameObject);

@@ -18,11 +18,10 @@ public class HeartShard : MonoBehaviour
 
     void Update()
     {
-        // 1. Gentle up-and-down floating motion
+        //floating motion
         float newY = startPosition.y + Mathf.Sin(Time.time * floatSpeed) * floatHeight;
         transform.position = new Vector3(startPosition.x, newY, startPosition.z);
 
-        // 2. Check for 'E' press while the player is standing near the shard
         Keyboard keyboard = Keyboard.current;
         if (playerInRange && keyboard != null && keyboard.eKey.wasPressedThisFrame)
         {
@@ -52,11 +51,9 @@ public class HeartShard : MonoBehaviour
     {
         if (playerObj != null)
         {
-            // Equip to player
+
             playerObj.SendMessage("EquipHeartShard", SendMessageOptions.DontRequireReceiver);
         }
-
-        // Shard disappears
         Destroy(gameObject);
     }
 }
