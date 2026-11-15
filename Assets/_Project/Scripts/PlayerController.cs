@@ -41,8 +41,11 @@ public class PlayerController : MonoBehaviour
             jumpPressed = true;
     }
 
+    
+
     void FixedUpdate()
     {
+        
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
