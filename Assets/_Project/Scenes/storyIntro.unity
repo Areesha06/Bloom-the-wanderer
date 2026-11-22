@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StorySceneManager
   dialogueText: {fileID: 97492168}
-  firstLevelSceneName: Game
+  firstLevelSceneName: WizardHub
   storyLines:
   - Somewhere across the stars, the Little Prince woke up to find his Rose fading.
   - Her petals had lost their glow, scattered across quiet, forgotten worlds.

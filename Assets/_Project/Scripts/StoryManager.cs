@@ -10,7 +10,7 @@ public class StorySceneManager : MonoBehaviour
 
     [Header("Next Level Configuration")]
     [Tooltip("Exact name of the scene to load after the intro finishes")]
-    public string firstLevelSceneName = "Game"; 
+    public string firstLevelSceneName = "WizardHub"; 
 
     [Header("Story Dialogue")]
     [TextArea(2, 4)]
