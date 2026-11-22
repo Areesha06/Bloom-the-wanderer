@@ -27,7 +27,6 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Hit a wall or ground
         if ((groundLayer.value & (1 << other.gameObject.layer)) != 0)
         {
             Destroy(gameObject);
@@ -63,10 +62,7 @@ public class Projectile : MonoBehaviour
             string hitName = other.gameObject.name.ToLower();
             if (other.CompareTag("Enemy") || hitName.Contains("SkullGoon") || hitName.Contains("BossShield") || hitName.Contains("BossKing") || hitName.Contains("king"))
             {
-                // Send TakeDamage message to whoever was hit (EnemyHealth or BossController)
                 other.gameObject.SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
-                        
-                // Destroy this projectile on impact so it does not pass through
                 Destroy(gameObject);
                 return;
             }
